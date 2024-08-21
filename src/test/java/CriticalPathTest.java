@@ -1,4 +1,4 @@
-
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CriticalPathTest extends BaseTest {
@@ -20,5 +20,6 @@ public class CriticalPathTest extends BaseTest {
         overviewPage.clickFinish();
         completePage.isPageOpened();
         completePage.clickBackHomeButton();
+        productPage.isPageOpened();
     }
 }
